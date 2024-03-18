@@ -1,0 +1,29 @@
+GET http://localhost:5247/games
+
+###
+GET http://localhost:5247/games/4
+
+###
+POST http://localhost:5247/games
+Content-Type: application/json
+
+{
+    "genre": "Roleplaying",
+    "price": 3.5,
+    "releaseDate" : "2017-09-10"
+}
+
+###
+PUT http://localhost:5247/games/5
+Content-Type: application/json
+
+{
+    "name" : "LQM",
+    "genre": "Roleplaying",
+    "price": 9.1,
+    "releaseDate" : "2017-10-10"
+}
+
+###
+DELETE http://localhost:5247/games/2
+
